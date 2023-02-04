@@ -1,6 +1,6 @@
 % Demo of using different line codings
 
-bits = [1 0 1 0 0 0 1 1 0];
+bits = [0 0 1 0 0 0 0 1];
 bitrate = 1; % bits per second
 
 figure;

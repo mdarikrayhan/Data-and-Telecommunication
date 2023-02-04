@@ -1,10 +1,4 @@
 function [t,x] = manchester(bits, bitrate)
-% MANCHESTER Encode bit string using Manchester code.
-%   [T, X] = MANCHESTER(BITS, BITRATE) encodes BITS array using Manchester
-%   code with given BITRATE. Outputs are time T and encoded signal
-%   values X.
-
-% Copyright (c) 2013 Yuriy Skalko <yuriy.skalko@gmail.com>
 
 T = length(bits)/bitrate; % full time of bit sequence
 n = 200;

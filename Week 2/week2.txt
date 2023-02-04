@@ -1,0 +1,140 @@
+clc; 
+close all;
+num=input('Enter a number: ');
+fact=1;
+if num<0
+fprintf('The number you have entered is negative.\n');
+else
+for i=1:num
+fact=fact*i;
+end
+fprintf('The factorial of %d is %d\n',num,fact);
+end
+
+
+
+clc; 
+close all;
+num1=input('Enter the first number: ');
+num2=input('Enter the second number: ');
+if num1<num2
+    fprintf('Second number is largest: %d\n',num2);
+else
+    fprintf('First number is largest: %d\n',num1)
+end
+
+
+clc; 
+close all;
+num1=input('Enter the first number: ');
+num2=input('Enter the second number: ');
+num3=input('Enter the third number: ');
+if num2>num1 && num2>num3
+    fprintf('Second number is largest: %d\n',num2);
+elseif num3>num1 && num3>num2
+    fprintf('Third number is largest: %d\n',num3)
+else
+    fprintf('First number is largest: %d\n',num1)
+end
+
+
+clc; 
+close all;
+num=input('Enter the number: ');
+if(num<=1)
+    fprintf('%d is not a prime.',num);
+else
+flag=0;
+
+for i=2:+1:sqrt(num)
+    y=mod(num,i);
+    if y==0
+        flag=flag+1;
+    end
+end
+if(flag==0)
+    fprintf('%d is a prime.',num);
+else
+    fprintf('%d is not a prime.',num);
+end
+end
+
+clc; 
+close all;
+num1=input('Enter the number: ');
+sum=0;
+count=0;
+fprintf('The prime numbers from 1 to %d : ',num1);
+for num=2:num1
+flag=0;
+for i=2:sqrt(num)
+    y=mod(num,i);
+    if y==0
+        flag=flag+1;
+    end
+end
+if(flag==0)
+    count=count+1;
+    sum=sum+num;
+    fprintf('%d ',num);
+end
+end
+fprintf('\nThe number of prime numbers is %d',count);
+fprintf('\nThe sum of primes from 1 to %d is %d',num,sum);
+
+
+clc;
+close all;
+num=input('Enter a number :');
+sum=0;
+for i=1:+2:num
+    sum=sum+i;
+end
+fprintf('The sum of odd numbers from 1 to %d is %d .',num,sum)
+
+clc;
+close all;
+num=input('Enter a number : ');
+sum=0;
+for i=1:+1:num
+    fact =1;
+    for j=1:+1:i
+        fact=fact*j;
+    end
+    fact =(1/fact);
+    sum=sum+fact;
+end
+fprintf('The sum of the series is %f',sum);
+
+clc;close all;
+num=input('Enter a number: ');
+for i=1:+1:num
+    for j=1:+1:i
+        fprintf('%d ',j);
+    end
+    fprintf('\n');
+end
+
+clc;close all;
+num=input('Enter a number: ');
+digit=1;
+for i=1:+1:num
+    for j=1:+1:i
+        fprintf('%d ',digit);
+        digit=digit+1;
+    end
+    fprintf('\n');
+end
+
+clc;close all;
+num=input('Enter a number: ');
+for i=1:+1:num
+    space=num-i;
+    for j=1:+1:space
+        fprintf(' ');
+    end
+    for k=1:+1:i
+        fprintf('* ')
+    end
+    fprintf('\n');
+end

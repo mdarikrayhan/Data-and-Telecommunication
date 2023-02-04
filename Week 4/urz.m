@@ -1,10 +1,4 @@
 function [t,x] = urz(bits, bitrate)
-% URZ Encode bit string using unipolar RZ code.
-%   [T, X] = URZ(BITS, BITRATE) encodes BITS array using unipolar RZ
-%   code with given BITRATE. Outputs are time T and encoded signal
-%   values X.
-
-% Copyright (c) 2013 Yuriy Skalko <yuriy.skalko@gmail.com>
 
 T = length(bits)/bitrate; % full time of bit sequence
 n = 200;
